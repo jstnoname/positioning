@@ -1,7 +1,6 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+const dialog = document.querySelector("#dialog")
+const openButton = document.querySelector("#openButton");
+const closeButton = document.querySelector("#closeButton");
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+openButton.onclick = () => dialog.showModal();
+closeButton.onclick = () => dialog.close();
