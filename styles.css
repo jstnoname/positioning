@@ -90,3 +90,35 @@ dialog::backdrop {
     left: 46px;
     transform: rotate(121deg);
 }
+.progress {
+    width: 500px;
+    height: 40px;
+    background: gray;
+    position: relative;
+}
+
+.progress-fill {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: red;
+}
+
+.progress-text {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+.progress-text span {
+    color: black;
+}
+
+.progress-text span.active {
+    color: white;
+}
