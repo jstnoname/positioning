@@ -28,3 +28,65 @@ dialog::backdrop {
 .closeButton:hover {
   color: #000;
 }
+.japan {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+.japan .circle {
+    width: 40px;
+    height: 40px;
+    background-color: #BA002C;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.japan .prymougolnik {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.mitsubishi {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.diamond {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+}
+
+.mitsubishi .top {
+    top: 5px;
+    left: 25px;
+    transform: rotate(0deg);
+}
+
+.mitsubishi .left {
+    top: 42px;
+    left: 3px;
+    transform: rotate(59deg);
+}
+
+.mitsubishi .right {
+    top: 42px;
+    left: 46px;
+    transform: rotate(121deg);
+}
